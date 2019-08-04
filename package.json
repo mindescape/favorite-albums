@@ -10,11 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/mindescape/favorite-albums.git"
   },
-  "keywords": ["react"],
+  "keywords": [
+    "react"
+  ],
   "author": "mindescape",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mindescape/favorite-albums/issues"
   },
-  "homepage": "https://github.com/mindescape/favorite-albums#readme"
+  "homepage": "https://github.com/mindescape/favorite-albums#readme",
+  "devDependencies": {
+    "standard": "^13.1.0"
+  }
 }
