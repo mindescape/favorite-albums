@@ -4,7 +4,15 @@
   "description": "A web application for creating collage with your favorite music albums.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "standard:fix": "standard --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": ["npm run standard:fix", "git add"]
   },
   "repository": {
     "type": "git",
@@ -20,6 +28,8 @@
   },
   "homepage": "https://github.com/mindescape/favorite-albums#readme",
   "devDependencies": {
+    "husky": "^3.0.2",
+    "lint-staged": "^9.2.1",
     "standard": "^13.1.0"
   }
 }
